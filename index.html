@@ -3,26 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Одностраничник</title>
+    <title>Сталь Челябинск</title>
     <link href="/dist/output.css" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#3B82F6',
-            }
-          }
-        }
-      }
-    </script>
 </head>
 <body class="bg-gray-50">
 <!-- Навигация -->
-<nav class="bg-blue-500 shadow-lg">
+<nav class="bg-blue-50 shadow-lg">
     <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
-            <div class="text-2xl font-bold text-primary">Логотип</div>
+            <div class="w-[80px] h-[80px]"><img src="/img/logo.png" alt="logo"></div>
             <div class="space-x-4">
                 <a href="#home" class="text-gray-700 hover:text-primary">Главная</a>
                 <a href="#about" class="text-gray-700 hover:text-primary">О нас</a>
@@ -41,23 +30,16 @@
         <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Это простой одностраничник с Tailwind CSS
         </p>
-        <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-            Начать
-        </button>
     </div>
 </section>
 
-<!-- Секция о нас -->
 <section id="about" class="py-20 bg-white">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">О нас</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center p-6">
-                <div class="text-primary text-4xl mb-4">🎯</div>
                 <h3 class="text-xl font-semibold mb-3">Цель</h3>
-                <p class="text-gray-600">Мы помогаем создавать красивые сайты быстро</p>
             </div>
-            <!-- Добавьте больше блоков -->
         </div>
     </div>
 </section>
@@ -65,7 +47,7 @@
 <!-- Футер -->
 <footer id="contact" class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-4 text-center">
-        <p>© 2024 Мой сайт. Все права защищены.</p>
+        <p>© 2026 Мой сайт. Все права защищены.</p>
     </div>
 </footer>
 </body>
