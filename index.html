@@ -8,22 +8,21 @@
     <link rel="icon" href="/img/Icon_logo.png">
 </head>
 <body class="bg-gray-50">
-<!-- Навигация -->
 <nav class="bg-blue-50 shadow-lg">
     <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
-            <div class="w-[80px] h-[80px]"><img src="/img/logo.png" alt="logo"></div>
-            <div class="space-x-4">
-                <a href="#home" class="text-gray-700 hover:text-primary">Главная</a>
-                <a href="#about" class="text-gray-700 hover:text-primary">О нас</a>
-                <a href="#contact" class="text-gray-700 hover:text-primary">Контакты</a>
+            <div class="w-[80px] h-[80px] hover:w-[90px] hover:h-[90px] hover:m-[-5px] transition-all duration-300"><a href="/"><img src="/img/logo.png" alt="logo"></a></div>
+            <div class="space-x-4 flex items-center">
+                <a href="#home" class="text-gray-700 hover:text-lg hover:text-blue-800 transition-all duration-300">Главная</a>
+                <a href="#about" class="text-gray-700 hover:text-lg hover:text-blue-800 transition-all duration-300">О нас</a>
+                <a href="#contact" class="text-gray-700 hover:text-lg hover:text-blue-800 transition-all duration-300">Контакты</a>
             </div>
         </div>
     </div>
 </nav>
 
-<!-- Герой секция -->
-<section id="home" class="py-20 px-4">
+<section id="home" class="py-20 px-4 relative">
+    <div class="absolute inset-0 bg-cover bg-center opacity-5 [background-position-y:-380px]" style="background-image: url('/img/bg.png');"></div>
     <div class="container mx-auto text-center">
         <h1 class="text-5xl font-bold text-gray-800 mb-6">
             Добро пожаловать
@@ -34,7 +33,7 @@
     </div>
 </section>
 
-<section id="about" class="py-20 bg-white">
+<section id="about" class="py-20 bg-white shadow-[0_-10px_15px_-3px_rgb(0,0,0,0.1)]">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">О нас</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -43,15 +42,35 @@
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                 <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
             </div>
+            <div class="flex flex-col gap-3">
+                <div class="rounded-3xl border-blue-500 hover:border-blue-700 hover:rounded-xl transition-all duration-300 border-2 p-1 h-fit">
+                    <div class="rounded-2xl border-blue-300 hover:border-blue-500 hover:rounded-lg transition-all duration-300 border-2 p-1">
+                        <img src="/img/team_photo_14680_u-4165_1_17102025_082504.jpg" alt="img" class="rounded-xl hover:rounded-md transition-all duration-300">
+                    </div>
+                </div>
+                <div class="rounded-3xl border-blue-500 hover:border-blue-700 hover:rounded-xl transition-all duration-300 border-2 p-1 h-fit">
+                    <div class="rounded-2xl border-blue-300 hover:border-blue-500 hover:rounded-lg transition-all duration-300 border-2 p-1">
+                        <img src="/img/team_photo_10417_u-4022_1_11122023_221902.jpg" alt="img" class="rounded-xl hover:rounded-md transition-all duration-300">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Футер -->
-<footer id="contact" class="bg-blue-800 text-white py-8">
+<button id="btn-up" type="button" class="flex items-center justify-center group opacity-0 duration-500 pointer-events-none bg-blue-50 rounded-2xl border-2 border-blue-300 h-12 w-12 cursor-pointer fixed bottom-3 right-3 hover:rounded-md transition-all">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:size-8 text-blue-400 transition-all duration-500">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+    </svg>
+
+</button>
+
+<footer id="contact" class="bg-blue-800 text-white py-8 shadow-[0_0px_15px_20px_rgb(0,0,100,0.15)]">
     <div class="container mx-auto px-4 text-center">
         <p>© 2026 Мой сайт. Все права защищены.</p>
     </div>
 </footer>
+<script src="/js/btnUp.js"></script>
 </body>
 </html>
