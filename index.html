@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сталь Челябинск</title>
-    <meta name="description" content="ООО Сталь LLC Steal">
-    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="description" content="ООО Сталь LLC Steel">
+    <link href="/dist/output.css?v=1.1.1" rel="stylesheet">
     <link rel="icon" href="/img/Icon_logo.png">
 </head>
 <body class="bg-gray-50">
@@ -29,14 +29,28 @@
 </nav>
 
 <section id="home" class="py-20 px-4 relative">
-    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5" style="background-image: url('/img/bg.webp');"></div>
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 z-[-1]" style="background-image: url('/img/bg.webp');"></div>
     <div class="container mx-auto text-center">
         <h1 class="text-5xl font-bold text-gray-800 mb-6">
             Добро пожаловать
         </h1>
-        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <p class="text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Строительство домов: от фундамента до крыши. Мы создаем надежные и долговечные объекты для вашего комфорта.
         </p>
+        <ul class="text-lg flex flex-col md:flex-row gap-3 items-center justify-center">
+            <li class="border-blue-300 border-2 rounded-full px-5 py-1 w-fit hover:border-blue-500 transition-all duration-300">
+                строительство
+            </li>
+            <li class="border-blue-300 border-2 rounded-full px-5 py-1 w-fit hover:border-blue-500 transition-all duration-300">
+                проектирование
+            </li>
+            <li class="border-blue-300 border-2 rounded-full px-5 py-1 w-fit hover:border-blue-500 transition-all duration-300">
+                реконструкция
+            </li>
+            <li class="border-blue-300 border-2 rounded-full px-5 py-1 w-fit hover:border-blue-500 transition-all duration-300">
+                отделка зданий
+            </li>
+        </ul>
     </div>
 </section>
 
@@ -46,10 +60,48 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="text-center p-6">
                 <h3 class="text-xl font-semibold mb-3">Цель</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <div class="flex flex-col gap-3">
+                <p>Специалисты нашей строительной компании - конструкторы, проектировщики, инженеры, строители, решают практически любые задачи: это и создание архитектурного проекта,  и расчет конструкций зданий и производство строительных, ремонтных и отделочных работ любой сложности.</p>
+                <p>Но главное – мы гарантируем соблюдение сроков и качества работ вне зависимости от сложности объектов и их размещения. Вы можете смело доверить нам выполнение самых важных и ответственных работ так же, как это сделали многие наши клиенты, которыми мы по праву можем гордиться.</p>
+                <p>Также являемся дилером крупных заводов изготовителей строительных материалов, мы готовы в кратчайшие сроки поставлять строительные материалы на наши объекты, с полным контролем гарантии и качества.</p>
+                </div>
             </div>
-            <div class="flex flex-col gap-3">
+            <div class="p-6">
+                <h3 class="text-xl text-center font-semibold mb-3">Основные виды деятельности</h3>
+                <ul class="text-lg flex flex-col gap-3 list-disc lg:mx-16">
+                    <li class="">
+                        Капитальный ремонт и реконструкция зданий и помещений
+                    </li>
+                    <li class="">
+                        Строительство зданий и сооружений
+                    </li>
+                    <li class="">
+                        Отделочные работы
+                    </li>
+                    <li class="">
+                        Монтаж стальных конструкций
+                    </li>
+                    <li class="">
+                        Бетонные работы
+                    </li>
+                    <li class="">
+                        Кровельные работы
+                    </li>
+                    <li class="">
+                        Монтаж железобетонных конструкций
+                    </li>
+                    <li class="">
+                        Земляные работы
+                    </li>
+                    <li class="">
+                        Составление смет на все виды работ
+                    </li>
+                    <li class="">
+                        Проектные работы
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="flex flex-col gap-3">
                 <div class="rounded-3xl border-blue-500 hover:border-blue-700 hover:rounded-2xl transition-all duration-300 border-2 p-1 h-fit">
                     <div class="rounded-2xl border-blue-300 hover:border-blue-500 hover:rounded-xl transition-all duration-300 border-2 p-1">
                         <img src="/img/team_photo_14680_u-4165_1_17102025_082504.webp" alt="img" class="w-full h-auto object-cover rounded-xl hover:rounded-lg transition-all duration-300">
@@ -60,7 +112,7 @@
                         <img src="/img/team_photo_10417_u-4022_1_11122023_221902.webp" alt="img" class="w-full h-auto object-cover rounded-xl hover:rounded-lg transition-all duration-300">
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
