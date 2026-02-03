@@ -33,6 +33,6 @@ function goToSlide(index) {
   updateCarousel();
 }
 
-//setInterval(nextSlide, 4000);
+setInterval(nextSlide, 5000);
 
 updateCarousel();
