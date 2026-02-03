@@ -1,10 +1,9 @@
 let currentSlide = 0;
+let interval = null;
 const slides = document.querySelectorAll('.carousel-slide');
 
 function updateCarousel() {
-  console.log('updateCarousel currentSlide', currentSlide);
   slides.forEach((slide, index) => {
-    console.log(slide);
     slide.classList.remove('active', 'next', 'prev');
     if (index === currentSlide) {
       slide.classList.add('active');
@@ -16,23 +15,27 @@ function updateCarousel() {
   });
 }
 
-function nextSlide() {
+function autoSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
-  console.log('nextSlide currentSlide', currentSlide);
   updateCarousel();
+}
+
+function nextSlide() {
+  startInterval();
+  autoSlide();
 }
 
 function prevSlide() {
+  startInterval();
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  console.log('nextSlide currentSlide', currentSlide);
   updateCarousel();
 }
 
-function goToSlide(index) {
-  currentSlide = index;
-  updateCarousel();
+function startInterval () {
+  clearInterval(interval);
+  interval = setInterval(autoSlide, 5000);
 }
 
-setInterval(nextSlide, 5000);
+startInterval();
 
 updateCarousel();
