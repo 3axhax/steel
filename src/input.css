@@ -7,6 +7,9 @@ html {
 }
 
 :root {
+    --color-white: #ffffff;
+    --color-blue-950: #172554;
+    --color-gray-900: #111827;
     --underline-height: 1px;
     --underline-spacing: 0.25em;
 }
@@ -19,6 +22,19 @@ html {
     hover:[background-size:100%_var(--underline-height)]
     transition-[background-size] duration-300 ease-out
     pb-[var(--underline-spacing)] -mb-1;
+}
+
+.outlined-heading {
+    @apply text-blue-300
+    [text-shadow:-1px_-1px_0_var(--color-blue-950),1px_-1px_0_var(--color-blue-950),-1px_1px_0_var(--color-blue-950),1px_1px_0_var(--color-blue-950)]
+    supports-[-webkit-text-stroke:1px_var(--color-blue-950)]:[-webkit-text-stroke:1px_var(--color-blue-950)]
+    supports-[-webkit-text-stroke:1px_var(--color-blue-950)]:[-webkit-text-fill-color:var(text-white)]
+    supports-[-webkit-text-stroke:1px_var(--color-blue-950)]:[text-shadow:none]
+    dark:text-gray-900
+    dark:[text-shadow:-1px_-1px_0_var(--color-white),1px_-1px_0_var(--color-white),-1px_1px_0_var(--color-white),1px_1px_0_var(--color-white)]
+    dark:supports-[-webkit-text-stroke:1px_var(--color-white)]:[-webkit-text-stroke:1px_var(--color-white)]
+    dark:supports-[-webkit-text-stroke:1px_var(--color-white)]:[-webkit-text-fill-color:var(--color-gray-900)]
+    dark:supports-[-webkit-text-stroke:1px_var(--color-white)]:[text-shadow:none];
 }
 
 .carousel-slide {
