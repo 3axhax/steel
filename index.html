@@ -56,7 +56,7 @@
 
 <section id="about" class="py-20 bg-white shadow-[0_-10px_15px_-3px_rgb(0,0,0,0.1)]">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">О нас</h2>
+        <h2 class="text-3xl font-bold text-center mb-4 lg:mb-12">О нас</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="text-center p-6">
                 <h3 class="text-xl font-semibold mb-3">Цель</h3>
@@ -114,57 +114,58 @@
         </div>
         <div>
             <div class="relative w-full">
-                <div class="overflow-hidden rounded-md shadow-xl">
+                <div class="overflow-hidden">
                     <div class="relative h-[500px]">
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 text-white active" data-index="0">
-                            <div class="text-center p-3 h-full w-fit">
-                                <img alt="slide-1" src="/img/carousel/01.jpg" class="h-full">
+                        <div class="carousel-slide absolute inset-0 flex items-center justify-center active" data-index="0">
+                            <div class="rounded-lg text-center p-3 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-1" src="/img/carousel/01.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 text-white" data-index="1">
-                            <div class="text-center p-3 h-full w-fit">
-                                <img alt="slide-2" src="/img/carousel/02.jpg" class="h-full">
+                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="1">
+                            <div class="rounded-lg text-center p-3 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-2" src="/img/carousel/02.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 text-white" data-index="2">
-                            <div class="text-center p-3 h-full w-fit">
-                                <img alt="slide-3" src="/img/carousel/03.jpg" class="h-full">
+                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="2">
+                            <div class="rounded-lg text-center p-3 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-3" src="/img/carousel/03.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 text-white" data-index="3">
-                            <div class="text-center p-3 h-full w-fit">
-                                <img alt="slide-4" src="/img/carousel/04.jpg" class="h-full">
+                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="3">
+                            <div class="rounded-lg text-center p-3 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-4" src="/img/carousel/04.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 text-white" data-index="4">
-                            <div class="text-center p-3 h-full w-fit">
-                                <img alt="slide-5" src="/img/carousel/05.jpg" class="h-full">
+                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="4">
+                            <div class="rounded-lg text-center p-3 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-5" src="/img/carousel/05.jpg" class="h-full w-auto rounded-lg">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white
-                       text-gray-800 w-12 h-12 rounded-full flex items-center justify-center border-2 border-blue-300
-                       shadow-lg transition-all duration-500 hover:scale-110 group"
+                <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-transparent
+                       text-blue-800 w-12 h-12 flex items-center justify-center transition-colors duration-200 ease-in
+                       hover:text-blue-600 group"
                         onclick="prevSlide()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:scale-110 group-hover:border-blue-500 text-blue-400 transition-all duration-500 -rotate-90">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         viewBox="0 0 32 32" xml:space="preserve" fill="currentColor">
+                        <path d="M19.8,29.4L6.3,16L19.8,2.6l5,5L16.4,16l8.4,8.4L19.8,29.4z M9.2,16l10.6,10.6l2.2-2.2L13.5,16l8.4-8.4l-2.2-2.2L9.2,16z"/>
                     </svg>
                 </button>
 
-                <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white
-                       text-gray-800 w-12 h-12 rounded-full flex items-center justify-center border-2 border-blue-300
-                       shadow-lg transition-all duration-500 hover:scale-110 group"
+                <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-transparent
+                        text-blue-800 w-12 h-12 flex items-center justify-center transition-colors duration-200 ease-in
+                       hover:text-blue-600 group"
                         onclick="nextSlide()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:scale-110 group-hover:border-blue-500 text-blue-400 transition-all duration-500 rotate-90">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         viewBox="0 0 32 32" xml:space="preserve" fill="currentColor">
+                        <path d="M11.3,2.6L24.8,16L11.3,29.4l-5-5l8.4-8.4L6.3,7.6L11.3,2.6z M21.9,16L11.3,5.4L9.2,7.6l8.4,8.4l-8.4,8.4l2.2,2.2L21.9,16z"
+                        />
                     </svg>
                 </button>
             </div>
@@ -177,10 +178,9 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
     </svg>
-
 </button>
 
-<footer id="contact" class="bg-blue-800 text-white py-8 shadow-[0_0px_15px_20px_rgb(0,0,100,0.15)]">
+<footer id="contact" class="bg-blue-950 text-white py-8 shadow-[0_0px_15px_20px_rgb(0,0,100,0.15)]">
     <div class="container mx-auto px-4 text-center">
         <div class="flex flex-col md:flex-row gap-10 justify-center text-center md:text-start">
             <p>454045, Россия, г.Челябинск<br>ул. Корабельная, д.15, помещение 7</p>
