@@ -6,6 +6,20 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --underline-height: 1px;
+    --underline-spacing: 0.25em;
+}
+
+.bg-underline {
+    @apply bg-gradient-to-r from-current to-current
+    bg-no-repeat
+    [background-position:left_bottom_var(--underline-spacing)]
+    [background-size:0_var(--underline-height)]
+    hover:[background-size:100%_var(--underline-height)]
+    transition-[background-size] duration-300 ease-out
+    pb-[var(--underline-spacing)] -mb-1;
+}
 
 .carousel-slide {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
