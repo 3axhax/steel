@@ -36,6 +36,6 @@ function startInterval () {
   interval = setInterval(autoSlide, 5000);
 }
 
-//startInterval();
+startInterval();
 
 updateCarousel();
