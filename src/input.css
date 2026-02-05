@@ -11,7 +11,7 @@ html {
     --color-blue-950: #172554;
     --color-gray-900: #111827;
     --underline-height: 1px;
-    --underline-spacing: 0.25em;
+    --underline-spacing: 0.75em;
 }
 
 @font-face {
@@ -33,6 +33,16 @@ html {
     [background-position:left_bottom_var(--underline-spacing)]
     [background-size:0_var(--underline-height)]
     hover:[background-size:100%_var(--underline-height)]
+    transition-[background-size] duration-300 ease-out
+    pb-[var(--underline-spacing)] -mb-1;
+}
+
+.bg-underline-hover {
+    @apply bg-gradient-to-r from-current to-current
+    bg-no-repeat
+    [background-position:left_bottom_var(--underline-spacing)]
+    [background-size:100%_var(--underline-height)]
+    hover:[background-size:0_var(--underline-height)]
     transition-[background-size] duration-300 ease-out
     pb-[var(--underline-spacing)] -mb-1;
 }
