@@ -14,6 +14,19 @@ html {
     --underline-spacing: 0.25em;
 }
 
+@font-face {
+    font-family: "Tektur";
+    src: url("/steel/font/Tektur.woff2") format("woff2");
+    /*src: url("/font/Tektur.woff2") format("woff2");*/
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-tektur {
+    font-family: "Tektur", Arial, Helvetica, sans-serif;
+}
+
 .bg-underline {
     @apply bg-gradient-to-r from-current to-current
     bg-no-repeat

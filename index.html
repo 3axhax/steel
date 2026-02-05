@@ -105,7 +105,7 @@
     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 z-[-1]" style="background-image: url('/img/bg.webp');"></div>
     <div class="container mx-auto text-center">
         <h1 class="sr-only">Строительная компания Сталь</h1>
-        <p class="text-5xl font-bold mb-6 outlined-heading">
+        <p class="text-5xl text-blue-950 font-bold mb-6 font-tektur">
             Добро пожаловать
         </p>
         <p class="text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -128,17 +128,17 @@
     </div>
 </section>
 
-<section id="about" class="py-20 bg-white shadow-[0_-10px_15px_-3px_rgb(0,0,0,0.1)]">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-4 lg:mb-12">О нас</h2>
+<section id="about" class="bg-white shadow-[0_-10px_15px_-3px_rgb(0,0,0,0.1)]">
+    <div class="container mx-auto px-4 py-20">
+        <h2 class="text-3xl font-tektur text-blue-950 font-bold text-center mb-4 lg:mb-12">О нас</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="text-center p-6">
                 <h3 class="text-xl font-semibold mb-3">Цель</h3>
-                <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 text-left indent-5">
                     <p>Специалисты нашей строительной компании - конструкторы, проектировщики, инженеры, строители, решают практически любые задачи: это и создание архитектурного проекта,  и расчет конструкций зданий и производство строительных, ремонтных и отделочных работ любой сложности.</p>
                     <p>Но главное – мы гарантируем соблюдение сроков и качества работ вне зависимости от сложности объектов и их размещения. Вы можете смело доверить нам выполнение самых важных и ответственных работ так же, как это сделали многие наши клиенты, которыми мы по праву можем гордиться.</p>
                     <p>Также являемся дилером крупных заводов изготовителей строительных материалов, мы готовы в кратчайшие сроки поставлять строительные материалы на наши объекты, с полным контролем гарантии и качества.</p>
-                    <p class="flex justify-center">
+                    <p class="flex justify-center align-text-top">
                         <a href="/doc/sro.pdf" target="_blank" class="group min-h-[180px]">
                             <img class="max-h-[150px] rounded-lg border-blue-300 group-hover:border-blue-500 group-hover:rounded-md group-hover:max-h-[155px] transition-all duration-300 border-2 p-1 h-fit" src="/img/sro.png" alt="СРО"/>
                             <span class="text-blue-600 underline">СРО</span>
@@ -146,47 +146,7 @@
                     </p>
                 </div>
             </div>
-            <div class="p-6">
-                <h3 class="text-xl text-center font-semibold mb-3">Основные виды деятельности</h3>
-                <ul class="text-lg flex flex-col gap-3 list-disc lg:mx-16">
-                    <li class="">
-                        Капитальный ремонт и реконструкция зданий и помещений
-                    </li>
-                    <li class="">
-                        Строительство зданий и сооружений
-                    </li>
-                    <li class="">
-                        Отделочные работы
-                    </li>
-                    <li class="">
-                        Монтаж стальных конструкций
-                    </li>
-                    <li class="">
-                        Бетонные работы
-                    </li>
-                    <li class="">
-                        Кровельные работы
-                    </li>
-                    <li class="">
-                        Монтаж железобетонных конструкций
-                    </li>
-                    <li class="">
-                        Земляные работы
-                    </li>
-                    <li class="">
-                        Составление смет на все виды работ
-                    </li>
-                    <li class="">
-                        Проектные работы
-                    </li>
-                    <li class="">
-                        Поставка и продажа труб любого диаметра
-                    </li>
-                </ul>
-            </div>
 
-        </div>
-        <div>
             <div class="relative w-full">
                 <div class="overflow-hidden">
                     <div class="relative h-[500px]">
@@ -223,27 +183,68 @@
                 </div>
 
                 <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-transparent
-                       text-blue-800 w-12 h-12 flex items-center justify-center transition-colors duration-200 ease-in
-                       hover:text-blue-600 group"
+                   text-blue-800 w-12 h-12 flex items-center justify-center transition-colors duration-200 ease-in
+                   hover:text-blue-600 group"
                         onclick="prevSlide()">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                          viewBox="0 0 32 32" xml:space="preserve" fill="currentColor">
-                        <path d="M19.8,29.4L6.3,16L19.8,2.6l5,5L16.4,16l8.4,8.4L19.8,29.4z M9.2,16l10.6,10.6l2.2-2.2L13.5,16l8.4-8.4l-2.2-2.2L9.2,16z"/>
-                    </svg>
+                    <path d="M19.8,29.4L6.3,16L19.8,2.6l5,5L16.4,16l8.4,8.4L19.8,29.4z M9.2,16l10.6,10.6l2.2-2.2L13.5,16l8.4-8.4l-2.2-2.2L9.2,16z"/>
+                </svg>
                 </button>
 
                 <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-transparent
-                        text-blue-800 w-12 h-12 flex items-center justify-center transition-colors duration-200 ease-in
-                       hover:text-blue-600 group"
+                    text-blue-800 w-12 h-12 flex items-center justify-center transition-colors duration-200 ease-in
+                   hover:text-blue-600 group"
                         onclick="nextSlide()">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                          viewBox="0 0 32 32" xml:space="preserve" fill="currentColor">
-                        <path d="M11.3,2.6L24.8,16L11.3,29.4l-5-5l8.4-8.4L6.3,7.6L11.3,2.6z M21.9,16L11.3,5.4L9.2,7.6l8.4,8.4l-8.4,8.4l2.2,2.2L21.9,16z"
-                        />
-                    </svg>
+                    <path d="M11.3,2.6L24.8,16L11.3,29.4l-5-5l8.4-8.4L6.3,7.6L11.3,2.6z M21.9,16L11.3,5.4L9.2,7.6l8.4,8.4l-8.4,8.4l2.2,2.2L21.9,16z"
+                    />
+                </svg>
                 </button>
             </div>
+
         </div>
+    </div>
+</section>
+<section id="opportunity" class="bg-stone-200/25 shadow-[0_-10px_15px_-3px_rgb(0,0,0,0.1)]">
+    <div class="container mx-auto px-6 py-20">
+        <h3 class="text-3xl font-tektur text-blue-950 font-bold text-center mb-4 lg:mb-12">Основные виды деятельности</h3>
+        <ul class="text-lg grid grid-cols-2 gap-3 list-disc lg:mx-16">
+            <li class="">
+                Капитальный ремонт и реконструкция зданий и помещений
+            </li>
+            <li class="">
+                Строительство зданий и сооружений
+            </li>
+            <li class="">
+                Отделочные работы
+            </li>
+            <li class="">
+                Монтаж стальных конструкций
+            </li>
+            <li class="">
+                Бетонные работы
+            </li>
+            <li class="">
+                Кровельные работы
+            </li>
+            <li class="">
+                Монтаж железобетонных конструкций
+            </li>
+            <li class="">
+                Земляные работы
+            </li>
+            <li class="">
+                Составление смет на все виды работ
+            </li>
+            <li class="">
+                Проектные работы
+            </li>
+            <li class="">
+                Поставка и продажа труб любого диаметра
+            </li>
+        </ul>
     </div>
 </section>
 
