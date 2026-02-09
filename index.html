@@ -207,34 +207,66 @@
             <div class="relative w-full">
                 <div class="overflow-hidden">
                     <div class="relative h-[500px]">
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center active" data-index="0">
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center active" data-index="0">
                             <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
                                 <img alt="slide-1" src="/img/carousel/01.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="1">
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="1">
                             <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
                                 <img alt="slide-2" src="/img/carousel/02.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="2">
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="2">
                             <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
                                 <img alt="slide-3" src="/img/carousel/03.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="3">
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="3">
                             <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
                                 <img alt="slide-4" src="/img/carousel/04.jpg" class="w-full h-auto lg:h-full lg:w-auto rounded-lg">
                             </div>
                         </div>
 
-                        <div class="carousel-slide absolute inset-0 flex items-center justify-center" data-index="4">
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="4">
                             <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
                                 <img alt="slide-5" src="/img/carousel/05.jpg" class="h-full w-auto rounded-lg">
                             </div>
+                        </div>
+
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="5">
+                            <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-5" src="/img/carousel/06.jpg" class="h-full w-auto rounded-lg">
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="6">
+                            <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-5" src="/img/carousel/07.jpg" class="h-full w-auto rounded-lg">
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide carousel-img absolute inset-0 flex items-center justify-center" data-index="7">
+                            <div class="rounded-lg text-center p-1 h-auto lg:h-full w-fit bg-gradient-to-r from-blue-50 to-blue-200 text-white shadow-lg">
+                                <img alt="slide-5" src="/img/carousel/08.jpg" class="h-full w-auto rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center text-center relative h-[72px] md:h-[48px] text-blue-900 text-sm mt-2">
+                        <div class="carousel-slide carousel-title absolute" data-index="0">
+                            Работы по комплексному ремонту МААП Казанское для нужд Челябинского филиала ФГКУ Росгранстрой
+                        </div>
+                        <div class="carousel-slide carousel-title absolute" data-index="1">
+                            Работы по комплексному ремонту МААП Воскресенское для нужд Челябинского филиала ФГКУ Росгранстрой
+                        </div>
+                        <div class="carousel-slide carousel-title absolute" data-index="2">
+                            Магистральные сети водоснабжения, водоотведения, водопонижения и дренажа глубокого заложения
+                        </div>
+                        <div class="carousel-slide carousel-title absolute" data-index="3">
+                            Реконструкции системы золошлакоудаления Рефтинской ГРЭС ООО "НЕФТЕГАЗСПЕЦСТРОЙ"
                         </div>
                     </div>
                 </div>
@@ -242,7 +274,7 @@
                 <button class="absolute -left-6 top-1/2 -translate-y-1/2 bg-transparent
                    text-blue-100 w-6 h-6 flex items-center justify-center transition-colors duration-200 ease-in
                    hover:text-blue-300 group"
-                        onclick="prevSlide()">
+                        onclick="imgCarousel.prevSlide()">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 8 8" xml:space="preserve" fill="currentColor">
                         <path d="M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z" />
@@ -252,7 +284,7 @@
                 <button class="absolute -right-6 top-1/2 -translate-y-1/2 bg-transparent
                     text-blue-100 w-6 h-6 rotate-180 flex items-center justify-center transition-colors duration-200 ease-in
                    hover:text-blue-300 group"
-                        onclick="nextSlide()">
+                        onclick="imgCarousel.nextSlide()">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 8 8" xml:space="preserve" fill="currentColor">
                         <path d="M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z" />
@@ -388,6 +420,61 @@
 	c1.722,0,3.116,1.396,3.116,3.117v61.98C67.476,66.819,66.082,68.213,64.36,68.213z M6.233,61.981h55.01V6.233H6.233V61.981z"/>
                 </svg>
                 Поставка и продажа труб любого диаметра
+            </li>
+            <li class="flex items-center mb-1.5">
+                <svg fill="currentColor" class="w-5 h-5 inline-flex mr-1.5 text-blue-800 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 67.476 68.213" >
+                    <path d="M27.494,52.367c-0.793,0-1.558-0.302-2.137-0.848L13.901,40.728c-1.253-1.18-1.312-3.152-0.132-4.405
+	c1.181-1.252,3.153-1.311,4.405-0.132l9.143,8.612l21.076-23.269c1.155-1.276,3.125-1.374,4.401-0.218s1.373,3.126,0.218,4.402
+	L29.804,51.342c-0.562,0.621-1.35,0.989-2.187,1.022C27.576,52.366,27.535,52.367,27.494,52.367z"/>
+                    <path d="M64.36,68.213H3.117C1.396,68.213,0,66.819,0,65.097V3.117C0,1.396,1.396,0,3.117,0H64.36
+	c1.722,0,3.116,1.396,3.116,3.117v61.98C67.476,66.819,66.082,68.213,64.36,68.213z M6.233,61.981h55.01V6.233H6.233V61.981z"/>
+                </svg>
+                Устройство телекоммуникаций и инженерии
+            </li>
+            <li class="flex items-center mb-1.5">
+                <svg fill="currentColor" class="w-5 h-5 inline-flex mr-1.5 text-blue-800 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 67.476 68.213" >
+                    <path d="M27.494,52.367c-0.793,0-1.558-0.302-2.137-0.848L13.901,40.728c-1.253-1.18-1.312-3.152-0.132-4.405
+	c1.181-1.252,3.153-1.311,4.405-0.132l9.143,8.612l21.076-23.269c1.155-1.276,3.125-1.374,4.401-0.218s1.373,3.126,0.218,4.402
+	L29.804,51.342c-0.562,0.621-1.35,0.989-2.187,1.022C27.576,52.366,27.535,52.367,27.494,52.367z"/>
+                    <path d="M64.36,68.213H3.117C1.396,68.213,0,66.819,0,65.097V3.117C0,1.396,1.396,0,3.117,0H64.36
+	c1.722,0,3.116,1.396,3.116,3.117v61.98C67.476,66.819,66.082,68.213,64.36,68.213z M6.233,61.981h55.01V6.233H6.233V61.981z"/>
+                </svg>
+                Реконструкция ветхого жилого фонда
+            </li>
+            <li class="flex items-center mb-1.5">
+                <svg fill="currentColor" class="w-5 h-5 inline-flex mr-1.5 text-blue-800 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 67.476 68.213" >
+                    <path d="M27.494,52.367c-0.793,0-1.558-0.302-2.137-0.848L13.901,40.728c-1.253-1.18-1.312-3.152-0.132-4.405
+	c1.181-1.252,3.153-1.311,4.405-0.132l9.143,8.612l21.076-23.269c1.155-1.276,3.125-1.374,4.401-0.218s1.373,3.126,0.218,4.402
+	L29.804,51.342c-0.562,0.621-1.35,0.989-2.187,1.022C27.576,52.366,27.535,52.367,27.494,52.367z"/>
+                    <path d="M64.36,68.213H3.117C1.396,68.213,0,66.819,0,65.097V3.117C0,1.396,1.396,0,3.117,0H64.36
+	c1.722,0,3.116,1.396,3.116,3.117v61.98C67.476,66.819,66.082,68.213,64.36,68.213z M6.233,61.981h55.01V6.233H6.233V61.981z"/>
+                </svg>
+                Благоустройство дворовых территорий, скверов и парков
+            </li>
+            <li class="flex items-center mb-1.5">
+                <svg fill="currentColor" class="w-5 h-5 inline-flex mr-1.5 text-blue-800 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 67.476 68.213" >
+                    <path d="M27.494,52.367c-0.793,0-1.558-0.302-2.137-0.848L13.901,40.728c-1.253-1.18-1.312-3.152-0.132-4.405
+	c1.181-1.252,3.153-1.311,4.405-0.132l9.143,8.612l21.076-23.269c1.155-1.276,3.125-1.374,4.401-0.218s1.373,3.126,0.218,4.402
+	L29.804,51.342c-0.562,0.621-1.35,0.989-2.187,1.022C27.576,52.366,27.535,52.367,27.494,52.367z"/>
+                    <path d="M64.36,68.213H3.117C1.396,68.213,0,66.819,0,65.097V3.117C0,1.396,1.396,0,3.117,0H64.36
+	c1.722,0,3.116,1.396,3.116,3.117v61.98C67.476,66.819,66.082,68.213,64.36,68.213z M6.233,61.981h55.01V6.233H6.233V61.981z"/>
+                </svg>
+                Оценка безопасности объектов транспорта и транспортной инфраструктуры на железнодорожном транспорте
+            </li>
+            <li class="flex items-center mb-1.5">
+                <svg fill="currentColor" class="w-5 h-5 inline-flex mr-1.5 text-blue-800 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 67.476 68.213" >
+                    <path d="M27.494,52.367c-0.793,0-1.558-0.302-2.137-0.848L13.901,40.728c-1.253-1.18-1.312-3.152-0.132-4.405
+	c1.181-1.252,3.153-1.311,4.405-0.132l9.143,8.612l21.076-23.269c1.155-1.276,3.125-1.374,4.401-0.218s1.373,3.126,0.218,4.402
+	L29.804,51.342c-0.562,0.621-1.35,0.989-2.187,1.022C27.576,52.366,27.535,52.367,27.494,52.367z"/>
+                    <path d="M64.36,68.213H3.117C1.396,68.213,0,66.819,0,65.097V3.117C0,1.396,1.396,0,3.117,0H64.36
+	c1.722,0,3.116,1.396,3.116,3.117v61.98C67.476,66.819,66.082,68.213,64.36,68.213z M6.233,61.981h55.01V6.233H6.233V61.981z"/>
+                </svg>
+                Монтаж сендвич-панелей
             </li>
         </ul>
     </div>
