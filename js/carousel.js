@@ -75,17 +75,14 @@ class ImgCarousel {
   }
 
   checkTitle = () => {
-    if ([0, 1].includes(this.currentSlide)) {
+    if ([0, 1, 2, 3].includes(this.currentSlide)) {
       this.titleCarousel.setSlide(0);
     }
-    else if ([2, 3].includes(this.currentSlide)) {
+    else if ([4, 5].includes(this.currentSlide)) {
       this.titleCarousel.setSlide(1);
     }
-    else if ([4, 5].includes(this.currentSlide)) {
-      this.titleCarousel.setSlide(2);
-    }
     else if ([6, 7].includes(this.currentSlide)) {
-      this.titleCarousel.setSlide(3);
+      this.titleCarousel.setSlide(2);
     }
     else {
       this.titleCarousel.setSlide(-1);

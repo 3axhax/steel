@@ -12,7 +12,7 @@
 <nav class="bg-blue-50/95 shadow-lg lg:sticky lg:top-0 z-10">
     <div class="container mx-auto px-4 py-4 lg:py-1 sm:px-10">
         <div class="flex justify-between items-center">
-            <a href="/" class="flex-inline text-blue-800 w-24 h-20 hover:text-blue-600 transition-colors duration-300"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 626.9 496.3"
+            <a href="/" class="flex-inline text-blue-800 w-24 h-20 hover:text-blue-600 transition-colors duration-300" title="logo"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 626.9 496.3"
 	 xml:space="preserve">
 <path d="M272.3,180.7c-13.8,0-27.7,0.4-41.5-0.2c-6.8-0.3-12.1,1.1-16.4,6.7c-2.9,3.8-6.4,7.3-10.2,10.2
 	c-9.7,7.5-13.4,16.6-12.4,29.2c1.2,15.2,0.2,30.6,0.3,45.9c0,1.6,1.3,4.4,2.2,4.5c5.2,0.4,10.5,0.2,16.3,0.2
@@ -257,15 +257,12 @@
                     </div>
                     <div class="flex justify-center text-center relative h-[72px] md:h-[48px] text-blue-900 text-sm mt-2">
                         <div class="carousel-slide carousel-title absolute" data-index="0">
-                            Работы по комплексному ремонту МААП Казанское для нужд Челябинского филиала ФГКУ Росгранстрой
+                            Работы по комплексному ремонту МААП
                         </div>
                         <div class="carousel-slide carousel-title absolute" data-index="1">
-                            Работы по комплексному ремонту МААП Воскресенское для нужд Челябинского филиала ФГКУ Росгранстрой
-                        </div>
-                        <div class="carousel-slide carousel-title absolute" data-index="2">
                             Магистральные сети водоснабжения, водоотведения, водопонижения и дренажа глубокого заложения
                         </div>
-                        <div class="carousel-slide carousel-title absolute" data-index="3">
+                        <div class="carousel-slide carousel-title absolute" data-index="2">
                             Реконструкции системы золошлакоудаления Рефтинской ГРЭС ООО "НЕФТЕГАЗСПЕЦСТРОЙ"
                         </div>
                     </div>
@@ -274,7 +271,8 @@
                 <button class="absolute -left-6 top-1/2 -translate-y-1/2 bg-transparent
                    text-blue-100 w-6 h-6 flex items-center justify-center transition-colors duration-200 ease-in
                    hover:text-blue-300 group"
-                        onclick="imgCarousel.prevSlide()">
+                        onclick="imgCarousel.prevSlide()"
+                        aria-label="предыдущий слайд">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 8 8" xml:space="preserve" fill="currentColor">
                         <path d="M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z" />
@@ -284,7 +282,8 @@
                 <button class="absolute -right-6 top-1/2 -translate-y-1/2 bg-transparent
                     text-blue-100 w-6 h-6 rotate-180 flex items-center justify-center transition-colors duration-200 ease-in
                    hover:text-blue-300 group"
-                        onclick="imgCarousel.nextSlide()">
+                        onclick="imgCarousel.nextSlide()"
+                        aria-label="следующий слайд">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 8 8" xml:space="preserve" fill="currentColor">
                         <path d="M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z" />
@@ -492,8 +491,9 @@
 <footer id="contact" class="bg-blue-950 text-white py-8 shadow-[0_0px_15px_20px_rgb(0,0,100,0.15)]">
     <div class="container mx-auto px-4 text-center">
         <div class="flex flex-col md:flex-row gap-4 lg:gap-10 justify-center text-center md:text-start">
+            <p>ООО "Сталь", ИНН 7451383831<br>Р/С 4070281017271000377</p>
             <p>454045, Россия, г.Челябинск<br>ул. Корабельная, д.15, помещение 7</p>
-            <p>Email: <a href="mailto:stalchel74@mail.ru">stalchel74@mail.ru</a><br>Телефон: <a href="tel:+73512448060">+7 (351) 244-80-60</a></p>
+            <p>Email: <a href="mailto:stalchel74@mail.ru">stalchel74@mail.ru</a><br>Телефон: <a href="tel:+73517770888">+7 (351) 777-08-88</a></p>
             <p class="text-white">Регистрационный номер выписки СРО: <br/>
             <a href="/doc/sro.pdf" target="_blank" class="text-blue-100 bg-underline-hover" title="ВЫПИСКА
 ИЗ РЕЕСТРА ЧЛЕНОВ
@@ -508,7 +508,7 @@
         </div>
     </div>
 </footer>
-<script src="/js/btnUp.js"></script>
-<script src="/js/carousel.js"></script>
+<script src="/js/btnUp.js?v=1.1.1"></script>
+<script src="/js/carousel.js?v=1.1.4"></script>
 </body>
 </html>

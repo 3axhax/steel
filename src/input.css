@@ -16,8 +16,8 @@ html {
 
 @font-face {
     font-family: "Tektur";
-    src: url("/steel/font/Tektur.woff2") format("woff2");
-    /*src: url("/font/Tektur.woff2") format("woff2");*/
+    /*src: url("/steel/font/Tektur.woff2") format("woff2");*/
+    src: url("/font/Tektur.woff2") format("woff2");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
